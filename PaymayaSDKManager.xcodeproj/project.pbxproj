@@ -10,6 +10,14 @@
 		4AF074A623B52807008DFEA4 /* PaymayaSDKManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF0749C23B52807008DFEA4 /* PaymayaSDKManager.framework */; };
 		4AF074AB23B52807008DFEA4 /* PaymayaSDKManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF074AA23B52807008DFEA4 /* PaymayaSDKManagerTests.swift */; };
 		4AF074AD23B52807008DFEA4 /* PaymayaSDKManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AF0749F23B52807008DFEA4 /* PaymayaSDKManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AF074B723B5288A008DFEA4 /* PayMayaSDKEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF074B623B5288A008DFEA4 /* PayMayaSDKEnvironment.swift */; };
+		4AF074B923B528D1008DFEA4 /* PaymayaUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF074B823B528D1008DFEA4 /* PaymayaUtilities.swift */; };
+		4AF074BB23B528FC008DFEA4 /* PaymayaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF074BA23B528FC008DFEA4 /* PaymayaConstants.swift */; };
+		4AF074BD23B529A7008DFEA4 /* PaymayaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF074BC23B529A7008DFEA4 /* PaymayaCard.swift */; };
+		4AF074C223B52AB4008DFEA4 /* PaymayaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF074C123B52AB4008DFEA4 /* PaymayaError.swift */; };
+		4AF074C423B52B63008DFEA4 /* PaymayaVaultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF074C323B52B63008DFEA4 /* PaymayaVaultResponse.swift */; };
+		4AF074CB23B52D5E008DFEA4 /* PaymayaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF074CA23B52D5E008DFEA4 /* PaymayaManager.swift */; };
+		4AF074CD23B53515008DFEA4 /* PaymayaBasicError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF074CC23B53515008DFEA4 /* PaymayaBasicError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		4AF074A523B52807008DFEA4 /* PaymayaSDKManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymayaSDKManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF074AA23B52807008DFEA4 /* PaymayaSDKManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymayaSDKManagerTests.swift; sourceTree = "<group>"; };
 		4AF074AC23B52807008DFEA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF074B623B5288A008DFEA4 /* PayMayaSDKEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayMayaSDKEnvironment.swift; sourceTree = "<group>"; };
+		4AF074B823B528D1008DFEA4 /* PaymayaUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymayaUtilities.swift; sourceTree = "<group>"; };
+		4AF074BA23B528FC008DFEA4 /* PaymayaConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymayaConstants.swift; sourceTree = "<group>"; };
+		4AF074BC23B529A7008DFEA4 /* PaymayaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymayaCard.swift; sourceTree = "<group>"; };
+		4AF074C123B52AB4008DFEA4 /* PaymayaError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymayaError.swift; sourceTree = "<group>"; };
+		4AF074C323B52B63008DFEA4 /* PaymayaVaultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymayaVaultResponse.swift; sourceTree = "<group>"; };
+		4AF074CA23B52D5E008DFEA4 /* PaymayaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymayaManager.swift; sourceTree = "<group>"; };
+		4AF074CC23B53515008DFEA4 /* PaymayaBasicError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymayaBasicError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +87,12 @@
 		4AF0749E23B52807008DFEA4 /* PaymayaSDKManager */ = {
 			isa = PBXGroup;
 			children = (
+				4AF074C923B52D23008DFEA4 /* Manager */,
+				4AF074C823B52D18008DFEA4 /* Environment */,
+				4AF074C723B52D0C008DFEA4 /* Models */,
+				4AF074C623B52CFE008DFEA4 /* Constants */,
+				4AF074C523B52CEA008DFEA4 /* Utilities */,
+				4AF074BE23B52A64008DFEA4 /* Response */,
 				4AF0749F23B52807008DFEA4 /* PaymayaSDKManager.h */,
 				4AF074A023B52807008DFEA4 /* Info.plist */,
 			);
@@ -84,6 +106,72 @@
 				4AF074AC23B52807008DFEA4 /* Info.plist */,
 			);
 			path = PaymayaSDKManagerTests;
+			sourceTree = "<group>";
+		};
+		4AF074BE23B52A64008DFEA4 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				4AF074C023B52A80008DFEA4 /* Error */,
+				4AF074BF23B52A70008DFEA4 /* Vault */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		4AF074BF23B52A70008DFEA4 /* Vault */ = {
+			isa = PBXGroup;
+			children = (
+				4AF074C323B52B63008DFEA4 /* PaymayaVaultResponse.swift */,
+			);
+			path = Vault;
+			sourceTree = "<group>";
+		};
+		4AF074C023B52A80008DFEA4 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				4AF074C123B52AB4008DFEA4 /* PaymayaError.swift */,
+				4AF074CC23B53515008DFEA4 /* PaymayaBasicError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		4AF074C523B52CEA008DFEA4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4AF074B823B528D1008DFEA4 /* PaymayaUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4AF074C623B52CFE008DFEA4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4AF074BA23B528FC008DFEA4 /* PaymayaConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4AF074C723B52D0C008DFEA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4AF074BC23B529A7008DFEA4 /* PaymayaCard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4AF074C823B52D18008DFEA4 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				4AF074B623B5288A008DFEA4 /* PayMayaSDKEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		4AF074C923B52D23008DFEA4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4AF074CA23B52D5E008DFEA4 /* PaymayaManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +236,7 @@
 				TargetAttributes = {
 					4AF0749B23B52807008DFEA4 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					4AF074A423B52807008DFEA4 = {
 						CreatedOnToolsVersion = 11.0;
@@ -195,6 +284,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF074CD23B53515008DFEA4 /* PaymayaBasicError.swift in Sources */,
+				4AF074BD23B529A7008DFEA4 /* PaymayaCard.swift in Sources */,
+				4AF074BB23B528FC008DFEA4 /* PaymayaConstants.swift in Sources */,
+				4AF074B723B5288A008DFEA4 /* PayMayaSDKEnvironment.swift in Sources */,
+				4AF074C223B52AB4008DFEA4 /* PaymayaError.swift in Sources */,
+				4AF074CB23B52D5E008DFEA4 /* PaymayaManager.swift in Sources */,
+				4AF074C423B52B63008DFEA4 /* PaymayaVaultResponse.swift in Sources */,
+				4AF074B923B528D1008DFEA4 /* PaymayaUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +437,7 @@
 		4AF074B123B52807008DFEA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DNZ5Z4EKKR;
@@ -356,7 +454,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jroque.PaymayaSDKManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -364,6 +463,7 @@
 		4AF074B223B52807008DFEA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DNZ5Z4EKKR;
@@ -380,7 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jroque.PaymayaSDKManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -388,6 +488,7 @@
 		4AF074B423B52807008DFEA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNZ5Z4EKKR;
 				INFOPLIST_FILE = PaymayaSDKManagerTests/Info.plist;
@@ -406,6 +507,7 @@
 		4AF074B523B52807008DFEA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNZ5Z4EKKR;
 				INFOPLIST_FILE = PaymayaSDKManagerTests/Info.plist;
